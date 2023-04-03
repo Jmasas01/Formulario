@@ -9,69 +9,84 @@
         <form action="./EjercicioFormulario.html" method="get">
             
             <section class="Nombre">
-                Nombre: <input type="text" placeholder="Escriba su Nombre" size="30" maxlength="20" autofocus required>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" placeholder="Escriba su Nombre" size="30" maxlength="20" autofocus required>
             </section>
             
             <section class="Correo">
-                Correo Electrónico: <input type="text" placeholder="Escriba su Mail" required>
+                <label for="Correo">Correo Electrónico:</label>
+                <input type="text" placeholder="Escriba su Mail" required>
             </section>
             
             <section class="contraseña">
-                Contraseña: <input type="password" placeholder="Escriba su Contraseña" maxlength="8">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" placeholder="Escriba su Contraseña" maxlength="8">
             </section>
 
             <section class="URL">
-                URL: <input type="url" placeholder="Escribe la URL">
+                <label for="URL">URL:</label>
+                <input type="url" placeholder="Escribe la URL">
             </section>
 
             <section class="Fecha">
-                Fecha: <input type="date">
+                <label for="Fecha">Fecha:</label>
+                <input type="date">
             </section>
 
             <section class="Tiempo">
-                Fecha: <input type="time">
+                <label for="Tiempo">Hora:</label>
+                <input type="time">
             </section>
 
             <section class="FechaTiempo">
-                Fecha y Hora: <input type="datetime">
+                <label for="FechaTiempo">Fecha y Hora:</label>
+                <input type="datetime">
             </section>
 
             <section class="Mes">
-                Mes: <input type="month">
+                <label for="Mes">Mes:</label>
+                <input type="month">
             </section>
             
             <section class="Semana">
-                Semana: <input type="week">
+                <label for="Semana">Semana:</label>
+                <input type="week">
             </section>
 
             <section class="Numero">
-                Número: <input type="number" min="-10" max="10">
+                <label for="Numero">Numero:</label>
+                <input type="number" min="-10" max="10">
             </section>
 
             <section class="Telefono">
-                Teléfono: <input type="tel">
+                <label for="Telefono">Telefono:</label>
+                <input type="tel">
             </section>
             
             <section class="Buscar">
-                Buscar: <input type="search">
+                <label for="Buscar">Buscar:</label>
+                <input type="search">
             </section>
 
             <section class="Color">
-                Color: <input type="color">
+                <label for="Color">Color:</label>
+                <input type="color">
             </section>
 
             <section class="Edad">
-                Edad: <input type="range" max="65" min="18" >
+                <label for="Edad">Edad:</label>
+                <input type="range" max="65" min="18" >
             </section>
 
             <section class="Radio">
-                Bloque preferido: 
+                <label for="Radio">Bloque preferido:</label>
                 <input type="radio" id="B3" name="Bloque 3"><label for="B3">Bloque 3</label>
                 <input type="radio" id="B4" name="Bloque 4" checked><label for="B4">Bloque 4</label>
             </section>
 
             <section class="CheckBox">
-                Temas Mas Interesantes<br>
+                <label for="Checkbox">Temas mas Interesantes:</label>
+                <br>
                 
                 <input type="checkbox" id="B3T5" name="B3T5" value="Tema">
                 <label for="B3T5">B3T5</label><br>
@@ -103,6 +118,18 @@
             <section class="Observaciones">
                 <textarea name="Observaciones" id="Obrsv" cols="20" rows="30" placeholder="Observaciones"></textarea>
             </section>
+
+            <script>
+                const el = document.getElementById('select');
+                const box = document.getElementById('tutorial');
+                el.addEventListener('change', function handleChange(event) {
+                   if (event.target.value === 'show') {
+                      box.style.visibility = 'visible';
+                   } else {
+                      box.style.visibility = 'hidden';
+                   }
+                });
+             </script>
 
             <section class="Boton Limpiar">
                 <input type="reset" value="Limpiar">
