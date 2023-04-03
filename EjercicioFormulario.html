@@ -120,15 +120,20 @@
             </section>
 
             <script>
-                const el = document.getElementById('select');
-                const box = document.getElementById('tutorial');
-                el.addEventListener('change', function handleChange(event) {
-                   if (event.target.value === 'show') {
-                      box.style.visibility = 'visible';
-                   } else {
-                      box.style.visibility = 'hidden';
-                   }
-                });
+                const el = document.getElementsByClassName('TemasFavoritos2');
+                const box = document.getElementsByClassName('Observaciones');
+                el.addEventListener
+                ('change', function handleChange(event) 
+                    {
+                        if (event.target.value === 'SeleccionaTema') 
+                        {
+                            box.style.visibility = 'hidden';
+                        } 
+                        else 
+                        {
+                            box.style.visibility = 'visible';
+                        }
+                    });
              </script>
 
             <section class="Boton Limpiar">
