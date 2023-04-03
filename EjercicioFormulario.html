@@ -5,6 +5,7 @@
             Ejercicio Formulario
         </title>
     </head>
+
     <body>
         <form action="./EjercicioFormulario.html" method="get">
             
@@ -115,23 +116,23 @@
                 <textarea name="Observaciones" id="Obrsv" cols="20" rows="30" placeholder="Observaciones"></textarea>
             </div>
 
-            <script>
+            <!--<script>
                 const hid = document.getElementsById("TemasFavoritos2");
                 const box = document.getElementsById("Observaciones");
                 hid.addEventListener
                     ("change", function effect(event) 
                         {
-                            if (event.target.value === "SeleccionaTema") 
+                            if (event.target.value !== "SeleccionaTema") 
                             {
-                                box.visibility = "hidden";
+                                box.style.visibility = "visible";
                             } 
                             else 
                             {
-                                box.visibility = "visible";
+                                box.style.visibility = "hidden";
                             }
                         }
                     );
-             </script>
+             </script>-->
 
             <section class="Boton Limpiar">
                 <input type="reset" value="Limpiar">
