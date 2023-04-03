@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ejercicio Formulario
+        </title>
+    </head>
+    <body>
+        <form action="./EjercicioFormulario.html" method="get">
+            
+            <section class="Nombre">
+                Nombre: <input type="text" placeholder="Escriba su Nombre" size="30" maxlength="20" autofocus required>
+            </section>
+            
+            <section class="Correo">
+                Correo Electrónico: <input type="text" placeholder="Escriba su Mail" required>
+            </section>
+            
+            <section class="contraseña">
+                Contraseña: <input type="password" placeholder="Escriba su Contraseña" maxlength="8">
+            </section>
+
+            <section class="URL">
+                URL: <input type="url" placeholder="Escribe la URL">
+            </section>
+
+            <section class="Fecha">
+                Fecha: <input type="date">
+            </section>
+
+            <section class="Tiempo">
+                Fecha: <input type="time">
+            </section>
+
+            <section class="FechaTiempo">
+                Fecha y Hora: <input type="datetime">
+            </section>
+
+            <section class="Mes">
+                Mes: <input type="month">
+            </section>
+            
+            <section class="Semana">
+                Semana: <input type="week">
+            </section>
+
+            <section class="Numero">
+                Número: <input type="number" min="-10" max="10">
+            </section>
+
+            <section class="Telefono">
+                Teléfono: <input type="tel">
+            </section>
+            
+            <section class="Buscar">
+                Buscar: <input type="search">
+            </section>
+
+            <section class="Color">
+                Color: <input type="color">
+            </section>
+
+            <section class="Edad">
+                Edad: <input type="range" max="65" min="18" >
+            </section>
+
+            <section class="Radio">
+                Bloque preferido: 
+                <input type="radio" id="B3" name="Bloque 3"><label for="B3">Bloque 3</label>
+                <input type="radio" id="B4" name="Bloque 4" checked><label for="B4">Bloque 4</label>
+            </section>
+
+            <section class="CheckBox">
+                Temas Mas Interesantes<br>
+                
+                <input type="checkbox" id="B3T5" name="B3T5" value="Tema">
+                <label for="B3T5">B3T5</label><br>
+                
+                <input type="checkbox" id="B3T6" name="B3T6" value="Tema">
+                <label for="B3T6">B3T6</label><br>
+                
+                <input type="checkbox" id="B3T7" name="B3T7" value="Tema">
+                <label for="B3T7">B3T7</label><br>
+                
+                <input type="checkbox" id="B3T8" name="B3T8" value="Tema">
+                <label for="B3T8">B3T8</label><br>
+
+                <input type="checkbox" id="B2T4" name="B2T4" value="Tema" checked>
+                <label for="B2T4">B2T4</label>
+            </section>
+
+            <section class="TemasFavoritos">
+                
+                <select id="TemasFavoritos2">
+                    <option id="SeleccionaTema">Selecciona un Tema</option>
+                    <option id="Bloque1">Bloque 1: B1T1, B1T2 y B1T3</option>
+                    <option id="Bloque2">Bloque 2: B2T2, B2T4 y B2T5</option>
+                    <option id="Bloque3">Bloque 3: B3T1, B3T2 y B3T3</option>
+                </select>
+
+            </section>
+
+            <section class="Observaciones">
+                <textarea name="Observaciones" id="Obrsv" cols="20" rows="30" placeholder="Observaciones"></textarea>
+            </section>
+
+            <section class="Boton Limpiar">
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </section>
+        </form>
+    </body>
+</html>
