@@ -104,36 +104,33 @@
                 <label for="B2T4">B2T4</label>
             </section>
 
-            <section class="TemasFavoritos">
-                
-                <select id="TemasFavoritos2">
-                    <option id="SeleccionaTema">Selecciona un Tema</option>
-                    <option id="Bloque1">Bloque 1: B1T1, B1T2 y B1T3</option>
-                    <option id="Bloque2">Bloque 2: B2T2, B2T4 y B2T5</option>
-                    <option id="Bloque3">Bloque 3: B3T1, B3T2 y B3T3</option>
-                </select>
+            <select id="TemasFavoritos2">
+                <option id="SeleccionaTema">Selecciona un Tema</option>
+                <option id="Bloque1">Bloque 1: B1T1, B1T2 y B1T3</option>
+                <option id="Bloque2">Bloque 2: B2T2, B2T4 y B2T5</option>
+                <option id="Bloque3">Bloque 3: B3T1, B3T2 y B3T3</option>
+            </select>
 
-            </section>
-
-            <section class="Observaciones">
+            <div id="Observaciones">
                 <textarea name="Observaciones" id="Obrsv" cols="20" rows="30" placeholder="Observaciones"></textarea>
-            </section>
+            </div>
 
             <script>
-                const el = document.getElementsByClassName('TemasFavoritos2');
-                const box = document.getElementsByClassName('Observaciones');
-                el.addEventListener
-                ('change', function handleChange(event) 
-                    {
-                        if (event.target.value === 'SeleccionaTema') 
+                const hid = document.getElementsById("TemasFavoritos2");
+                const box = document.getElementsById("Observaciones");
+                hid.addEventListener
+                    ("change", function effect(event) 
                         {
-                            box.style.visibility = 'hidden';
-                        } 
-                        else 
-                        {
-                            box.style.visibility = 'visible';
+                            if (event.target.value === "SeleccionaTema") 
+                            {
+                                box.visibility = "hidden";
+                            } 
+                            else 
+                            {
+                                box.visibility = "visible";
+                            }
                         }
-                    });
+                    );
              </script>
 
             <section class="Boton Limpiar">
