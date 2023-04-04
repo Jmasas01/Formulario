@@ -116,11 +116,47 @@
                 <option id="Bloque3">Bloque 3: B3T1, B3T2 y B3T3</option>
             </select>
 
-            <div id="Observaciones">
-                <textarea name="Observaciones" id="Obrsv" cols="20" rows="30" placeholder="Observaciones"></textarea>
-            </div>
+            <section class="observaciones">
+                
+            </section>
+
+            <script>
+            function myFunction() 
+            {
+                var x = document.createElement("TEXTAREA");
+                var t = document.createTextNode("Observaciones.");
+                x.appendChild(t);
+                document.body.appendChild(x);
+            }
+            </script>
+                        
+        
+           
 
             <!--<script>
+                function thefunction()
+                {
+                    var para = document.createElement("TEXTAREA");
+                    var node = document.createTextNode("Observaciones");
+                    para.appendChild(node);
+                    document.getElementById("observaciones").innerHTML = thefunction();
+                }
+            </script>
+          
+        -->
+          
+          
+          
+            <!-- <script>
+                var section = document.getElementsById("observaciones");
+                var input = document.createElement("textarea");
+                input.cols = "20";
+                input.rows = "30";
+                id.appendchild(input);
+            </script>
+
+
+            <script>
                 const hid = document.getElementsById("TemasFavoritos2");
                 const box = document.getElementsById("Observaciones");
                 hid.addEventListener
